@@ -1,0 +1,164 @@
+<html>
+<head>
+    <title>Forms Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        form {
+            margin-bottom: 30px;
+        }
+        fieldset {
+            border: 1px solid #0077cc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        legend {
+            font-weight: bold;
+            color: #0077cc;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .scrolled-selection {
+            height: 60px;
+        }
+        button {
+            width: auto;
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005fa3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Form 1</h1>
+<fieldset>
+        <form id="signup-form" action="signin.html" method="post">
+<fieldset>
+            <legend>Sign up</legend>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="contact">Contact no.:</label>
+            <input type="contact" id="contact" name="contact" placeholder="Enter your Contact no.	" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <label>
+                <input type="checkbox" id="terms" name="terms" required>
+                I agree to the terms and conditions
+            </label>
+
+            <button type="submit">Sign Up</button>
+        </form>	
+</fieldset>
+
+        <form id="signin-form" action="welcome.html" method="post">
+<fieldset>
+            <legend>Sign In</legend>
+            <label for="signin-username">Username:</label>
+            <input type="text" id="signin-username" name="signin-username" placeholder="Enter your username" required>
+
+            <label for="signin-password">Password:</label>
+            <input type="password" id="signin-password" name="signin-password" placeholder="Enter your password" required>
+
+            <button type="submit">Sign In</button>
+        </form>
+</fieldset>
+</fieldset>
+        <form id="html5-elements-form" action="#" method="post">
+            <h2>Form 2</h2>
+<fieldset>
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label>Gender:</label>
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="other"> Other</label><br>
+
+                <label>Hobbies:</label>
+                <label><input type="checkbox" name="hobbies" value="gaming"> Gaming</label>
+                <label><input type="checkbox" name="hobbies" value="watching movies"> Watching movies</label>
+                <label><input type="checkbox" name="hobbies" value="sports"> Sports</label><br>
+
+                <label for="country">Country:</label>
+                <select id="country" name="country" class="scrolled-selection" required>
+                    <option value="india">India</option>
+                    <option value="usa">United States</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="canada">Canada</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label for="preference">Prefered Contact:</label>
+                <select id="preference" name="preference" required>
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+                    <option value="discord">Discord</option>
+                    <option value="teams">Teams</option>
+                </select>
+
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" placeholder="Enter your comments here..." rows="4" required></textarea>
+
+                <label for="color">Favorite Color:</label>
+                <input type="color">
+
+                <label for="birthdate">Birthdate:</label>
+                <input type="date">
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="1" max="100" required>
+
+                <label for="skills">Skills:</label>
+                <input list="skills-list" id="skills" name="skills" placeholder="Choose or type your skill">
+                <datalist id="skills-list">
+                    <option value="Programming">
+                    <option value="Designing">
+                    <option value="Sports">
+                    <option value="Politics">
+                </datalist>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+        </form>
+</fieldset>
+    </div>
+</body>
+</html>
